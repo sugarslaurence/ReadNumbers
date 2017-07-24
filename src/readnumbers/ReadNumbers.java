@@ -160,6 +160,14 @@ public class ReadNumbers {
                     
                     Collections.sort(HighestValues);
                     //System.out.println(HighestValues);
-              
+         
+                    
+        //This writes to a file
+        
+        WriteFile data = new WriteFile(file_name, true);
+        //Remove 'true' if you just want to overwrite the file
+        
+        data.writeToFile( "This is another line of text" );
+        
     }   
 }
