@@ -4,6 +4,8 @@ package readnumbers;
 
 public class PrimeIdentifier {
     
+    //This method returns either true or false depending on whether the parsed value is prime or not
+    
     boolean primeValue (double value) {
  
         boolean isPrime = true; 
@@ -22,13 +24,14 @@ public class PrimeIdentifier {
                 //System.out.println(j);
                 
                 if (j == (int)(j)) {
+                //Determines if j is an integer    
 
                 isPrime = false;
                 
                 break;
                 }
         }
-        System.out.println(isPrime);
+        //System.out.println(isPrime);
         return isPrime; 
     
     }

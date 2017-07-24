@@ -2,6 +2,9 @@ package readnumbers;
 
 public class FactorialCalculator {
 
+    //This method expects an integer and returns an interger
+    //The integer returned is the highest Fibonacci number less than the integer provided
+    
     int FactorialValue (int value) {
        
        int i;
@@ -15,9 +18,7 @@ public class FactorialCalculator {
 
            result = result * i;
            
-           
-           
-           //System.out.println(total);  
+           //System.out.println(result);  
            
        }
     //System.out.println(result);

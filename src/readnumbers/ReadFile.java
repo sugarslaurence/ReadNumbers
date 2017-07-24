@@ -8,6 +8,8 @@ public class ReadFile {
 
     private String path;
     
+    //This method reads the text file and parses the data into an array called Text Data
+    
     public ReadFile (String file_path) {
         
         path =  file_path;
@@ -39,6 +41,8 @@ public class ReadFile {
     return textData;    
     
     }
+    
+    //This method reads the text file number of lines 
     
     int readLines () throws IOException {
         
