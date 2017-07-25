@@ -34,7 +34,7 @@ public class WriteFile {
        PrintWriter print_line = new PrintWriter( write );
        //The FileWriter write bytes, however. But we can hand the FileWriter plain text with the aid of the PrintWriter class. The PrintWriter has a few handy print methods for this. 
        
-       print_line.printf("%n" + "%s" + "%n"  , textLine);
+       print_line.printf("%s" + "%n"  , textLine);
        // A good reason for using printf is to handle new line characters. 
        //The %s between double quotes means a string of characters of any length. The %n means a newline.
        

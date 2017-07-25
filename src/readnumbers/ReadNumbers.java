@@ -164,10 +164,29 @@ public class ReadNumbers {
                     
         //This writes to a file
         
-        WriteFile data = new WriteFile(file_name, true);
+        WriteFile dataClean = new WriteFile(file_name);
         //Remove 'true' if you just want to overwrite the file
         
-        data.writeToFile( "This is another line of text" );
+        dataClean.writeToFile(null);
+        
+        
+        //This reorders numbers from low to high and over writes file with reordering
+        
+        Arrays.sort(fileLines);
+        
+        WriteFile data = new WriteFile(file_name);
+        
+        for (k = 0; k < fileLines.length; k ++) {
+            //System.out.println(fileLines[k]);
+            
+            String s = Integer.toString(fileLines[k]);
+            
+            data.writeToFile(s);
+            
+            
+            }
+        
+        
         
     }   
 }
