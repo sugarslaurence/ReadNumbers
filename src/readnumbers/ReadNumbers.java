@@ -13,7 +13,6 @@ public class ReadNumbers {
         
         String file_name = "/Users/laurencesugars/Documents/ListOfNumbers.txt";
         
-        
         //This line initialises the method: ReadFile
         ReadFile file = new ReadFile (file_name);
         //System.out.println(file);
