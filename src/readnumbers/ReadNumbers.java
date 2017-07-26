@@ -166,7 +166,7 @@ public class ReadNumbers {
         WriteFile dataClean = new WriteFile(file_name);
         //Remove 'true' if you just want to overwrite the file
         
-        dataClean.writeToFile(null);
+        dataClean.writeToFile(" ");
         
         
         //This reorders numbers from low to high and over writes file with reordering
